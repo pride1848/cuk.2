@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - CUK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* 배너 섹션 스타일 */
+        .page-banner {
+            height: 300px; 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner2.jpeg');
+            background-size: cover;
+            background-position: 50% 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* 마우스 호버 및 활성화된 페이지 텍스트 색상 커스텀 */
+        .hover-primary:hover { color: #004d99 !important; }
+        .active-primary { color: #004d99 !important; }
+
+        /* People 페이지의 Bio 섹션 스타일 적용 */
+        .section-divider { 
+            border-bottom: 1px solid #f3f4f6; 
+            margin-bottom: 1.5rem; 
+            padding-bottom: 0.5rem; 
+            font-size: 0.75rem; 
+            font-weight: 700; 
+            letter-spacing: 0.1em; 
+            text-transform: uppercase; 
+            color: #004d99;
+        }
+        
+        /* 날짜 정렬 완벽 교정 스타일 */
+        .date-justify {
+            display: inline-block;
+            width: 92px; 
+            text-align: justify;
+            text-align-last: justify;
+            font-variant-numeric: tabular-nums; 
+            letter-spacing: 0.02em; 
+            word-break: break-all;
+        }
+        .date-justify:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="mtc-logo.png" alt="MTC Logo" class="h-10 w-auto object-contain">
+                <div class="text-xl font-bold tracking-tighter">
+                    <a href="index.html">CUK <span class="text-blue-600">.</span></a>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover-primary transition uppercase">home</a>
+                <a href="people.html" class="hover-primary transition uppercase">people</a>
+                <a href="lecture.html" class="hover-primary transition uppercase">lecture</a>
+                <a href="research.html" class="active-primary hover-primary transition uppercase">research</a>
+                <a href="publications.html" class="hover-primary transition uppercase">publications</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <h2 class="text-5xl font-bold text-white tracking-tight">Research</h2>
+    </section>
+
+    <main class="pt-12 pb-24 px-6 max-w-6xl mx-auto">
+        
+        <section class="mb-32">
+            <h4 class="section-divider">Creative Works & Presentations</h4>
+            <div class="space-y-6">
+                
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-gray-100 pb-6">
+                    <div class="md:w-1/6">
+                        <span class="text-3xl font-bold text-[#004d99]">2025</span>
+                    </div>
+                    <div class="md:w-5/6 space-y-8">
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">포트릿 I</h3>
+                                    <span class="text-sm text-gray-500">한국만화박물관 1층</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2025.10.24</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">알보 리브즈</h3>
+                                    <span class="text-sm text-gray-500">Centre de Congres de l'Imperial Palace</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2025.06.08</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-gray-100 py-6">
+                    <div class="md:w-1/6">
+                        <span class="text-3xl font-bold text-[#004d99]">2024</span>
+                    </div>
+                    <div class="md:w-5/6 space-y-8">
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">엣 더스크</h3>
+                                    <span class="text-sm text-gray-500">Stanley Park Dining Pavilion</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2024.10.15</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">타이포그래픽 콜라쥬</h3>
+                                    <span class="text-sm text-gray-500">Centre de Congres de L'Imperial Palace</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2024.06.09</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-gray-100 py-6">
+                    <div class="md:w-1/6">
+                        <span class="text-3xl font-bold text-[#004d99]">2023</span>
+                    </div>
+                    <div class="md:w-5/6 space-y-8">
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">V7R</h3>
+                                    <span class="text-sm text-gray-500">Korean Cultural Center (Brussels, Belgium)</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2023.09.08</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">Shiksa</h3>
+                                    <span class="text-sm text-gray-500">Centre de Congres de L’Imperial Palace</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2023.06.11</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-gray-100 py-6">
+                    <div class="md:w-1/6">
+                        <span class="text-3xl font-bold text-[#004d99]">2022</span>
+                    </div>
+                    <div class="md:w-5/6 space-y-8">
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">Design for Battery Place Market</h3>
+                                    <span class="text-sm text-gray-500">한국만화박물관 1층 로비, 부천시</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2022.10.21</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">Magnolia advertisement</h3>
+                                    <span class="text-sm text-gray-500">Loyola Marymount University gallery</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2022.07.13</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">Pet treats poster design</h3>
+                                    <span class="text-sm text-gray-500">Imperial Palace, Annecy</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2022.06.13</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-gray-100 py-6">
+                    <div class="md:w-1/6">
+                        <span class="text-3xl font-bold text-[#004d99]">2021</span>
+                    </div>
+                    <div class="md:w-5/6 space-y-8">
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">팻 트릿 패키징디자인</h3>
+                                    <span class="text-sm text-gray-500">한국만화박물관 2층 로비 전시관</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2021.10.22</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">Doolkae series</h3>
+                                    <span class="text-sm text-gray-500">Centre de Congres de I'Imperial Palace</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2021.06.14</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-gray-100 py-6">
+                    <div class="md:w-1/6">
+                        <span class="text-3xl font-bold text-[#004d99]">2020</span>
+                    </div>
+                    <div class="md:w-5/6">
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">Yes, It's Yum</h3>
+                                    <span class="text-sm text-gray-500">한성대학교 상상관 1층 상상홀</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2020.11.27</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-gray-100 py-6">
+                    <div class="md:w-1/6">
+                        <span class="text-3xl font-bold text-[#004d99]">2019</span>
+                    </div>
+                    <div class="md:w-5/6 space-y-8">
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">Kitty stationary</h3>
+                                    <span class="text-sm text-gray-500">The Kosygin State University of Russia</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2019.08.20</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">Unagi packaging design</h3>
+                                    <span class="text-sm text-gray-500">백석대학교 조형관</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2019.05.25</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-gray-100 py-6">
+                    <div class="md:w-1/6">
+                        <span class="text-3xl font-bold text-[#004d99]">2018</span>
+                    </div>
+                    <div class="md:w-5/6 space-y-8">
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">무제</h3>
+                                    <span class="text-sm text-gray-500">IDAS, 홍익대학교 홍문관 로비</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2018.05.26</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">아이스크림 패키지 디자인</h3>
+                                    <span class="text-sm text-gray-500">Mokpo National University</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2018.05.11</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-gray-100 py-6">
+                    <div class="md:w-1/6">
+                        <span class="text-3xl font-bold text-[#004d99]">2017</span>
+                    </div>
+                    <div class="md:w-5/6 space-y-8">
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">어텀 브리즈</h3>
+                                    <span class="text-sm text-gray-500">Asian Institute of Technology</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2017.12.09</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">코울 파인 진 & 코울 파인 믹스</h3>
+                                    <span class="text-sm text-gray-500">이앙갤러리</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2017.06.28</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">스쿠이져블 소스 트리오</h3>
+                                    <span class="text-sm text-gray-500">Centre de Congres de I'Imperial Palace</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2017.06.12</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">트루 워터</h3>
+                                    <span class="text-sm text-gray-500">Mexico Korean Culture Center</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2017.02.16</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 md:gap-12 py-6">
+                    <div class="md:w-1/6">
+                        <span class="text-3xl font-bold text-[#004d99]">2012</span>
+                    </div>
+                    <div class="md:w-5/6 space-y-8">
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">타이포그래피와 색채</h3>
+                                    <span class="text-sm text-gray-500">대구경북디자인센터</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2012.10.22</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+
+                        <div class="flex flex-col">
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                                <div class="flex items-baseline gap-3">
+                                    <h3 class="text-base font-bold text-gray-800">신비로운 도시, 경주</h3>
+                                    <span class="text-sm text-gray-500">경주 드림센터</span>
+                                </div>
+                                <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2012.05.30</span>
+                            </div>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">연구책임자</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-24">
+            <h4 class="section-divider">Patents</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4"> 
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-100 flex justify-between items-center">
+                    <div>
+                        <h3 class="text-base font-bold mb-0.5 text-gray-800">Character design sticker</h3>
+                        <p class="text-sm text-gray-500">SH-30-21-018-KR</p>
+                    </div>
+                    <span class="text-sm font-bold text-[#004d99] date-justify">2021.12.28</span>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-100 flex justify-between items-center">
+                    <div>
+                        <h3 class="text-base font-bold mb-0.5 text-gray-800">Chracter design</h3>
+                        <p class="text-sm text-gray-500">30-2020-0064554</p>
+                    </div>
+                    <span class="text-sm font-bold text-[#004d99] date-justify">2020.12.23</span>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-100 flex justify-between items-center">
+                    <div>
+                        <h3 class="text-base font-bold mb-0.5 text-gray-800">Chracter design</h3>
+                        <p class="text-sm text-gray-500">30-2020-0064555</p>
+                    </div>
+                    <span class="text-sm font-bold text-[#004d99] date-justify">2020.12.23</span>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-100 flex justify-between items-center">
+                    <div>
+                        <h3 class="text-base font-bold mb-0.5 text-gray-800">Character toy</h3>
+                        <p class="text-sm text-gray-500">30-2019-0062154</p>
+                    </div>
+                    <span class="text-sm font-bold text-[#004d99] date-justify">2019.08.24</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h4 class="section-divider">Intellectual Property</h4>
+            <div class="space-y-6">
+                <div class="pb-4">
+                    <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                        <div class="flex items-baseline gap-3">
+                            <h3 class="text-base font-bold text-gray-800">캐릭터 스티커</h3>
+                            <span class="text-sm text-gray-500">가톨릭대학교 산학협력단</span>
+                        </div>
+                        <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2021.12.28</span>
+                    </div>
+                    <p class="text-xs text-gray-400 uppercase tracking-wider">주발명자</p>
+                </div>
+
+                <div class="pb-4">
+                    <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                        <div class="flex items-baseline gap-3">
+                            <h3 class="text-base font-bold text-gray-800">캐릭터 스티커</h3>
+                            <span class="text-sm text-gray-500">가톨릭대학교 산학협력단</span>
+                        </div>
+                        <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2021.01.06</span>
+                    </div>
+                    <p class="text-xs text-gray-400 uppercase tracking-wider">주발명자</p>
+                </div>
+
+                <div class="pb-4">
+                    <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                        <div class="flex items-baseline gap-3">
+                            <h3 class="text-base font-bold text-gray-800">캐릭터 스티커</h3>
+                            <span class="text-sm text-gray-500">가톨릭대학교 산학협력단</span>
+                        </div>
+                        <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2021.01.06</span>
+                    </div>
+                    <p class="text-xs text-gray-400 uppercase tracking-wider">주발명자</p>
+                </div>
+
+                <div class="pb-4">
+                    <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                        <div class="flex items-baseline gap-3">
+                            <h3 class="text-base font-bold text-gray-800">캐릭터 스티커</h3>
+                            <span class="text-sm text-gray-500">가톨릭대학교 산학협력단</span>
+                        </div>
+                        <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2020.02.05</span>
+                    </div>
+                    <p class="text-xs text-gray-400 uppercase tracking-wider">주발명자</p>
+                </div>
+
+                <div class="pb-4">
+                    <div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-1">
+                        <div class="flex items-baseline gap-3">
+                            <h3 class="text-base font-bold text-gray-800">캐릭터 스티커</h3>
+                            <span class="text-sm text-gray-500">가톨릭대학교 산학협력단</span>
+                        </div>
+                        <span class="text-sm font-bold text-[#004d99] whitespace-nowrap date-justify">2020.02.05</span>
+                    </div>
+                    <p class="text-xs text-gray-400 uppercase tracking-wider">주발명자</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-12 px-6 text-center">
+        <div class="max-w-7xl mx-auto text-sm text-gray-400">
+            <p>@cuk</p>
+            <p class="mt-2 uppercase tracking-widest text-[10px]">The Catholic University of Korea, Bucheon, Republic of Korea</p>
+        </div>
+    </footer>
+
+</body>
+</html>

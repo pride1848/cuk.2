@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People - CUK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .page-banner {
+            height: 300px; 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner2.jpeg');
+            background-size: cover;
+            background-position: 50% 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* #FB923C -> #004d99 수정 */
+        .hover-primary:hover { color: #004d99 !important; }
+        .active-primary { color: #004d99 !important; }
+        
+        .lang-ko { display: block; color: #111827; font-weight: 600; font-size: 0.95rem; }
+        .lang-en { display: block; color: #6B7280; font-size: 0.85rem; font-weight: 400; margin-top: 2px; }
+        .section-divider { border-bottom: 1px solid #f3f4f6; margin-bottom: 1.5rem; padding-bottom: 0.5rem; }
+
+        .thesis-title, .exp-detail { display: block; font-size: 0.8rem; color: #9CA3AF; margin-top: 4px; font-style: italic; }
+        .exp-list { font-size: 0.75rem; color: #9CA3AF; margin-top: 2px; line-height: 1.4; }
+
+        /* 타임라인 레이아웃 수정 */
+        .timeline-container { position: relative; padding-left: 1.5rem; }
+        .timeline-line { position: absolute; left: 4px; top: 10px; bottom: 10px; width: 1.5px; background-color: #E5E7EB; }
+        
+        /* 회색 점 위치 교정 */
+        .timeline-dot { 
+            position: absolute; 
+            left: -1.36em; 
+            top: 8px; 
+            width: 5px; 
+            height: 5px; 
+            background-color: #D1D5DB; 
+            border-radius: 50%; 
+            z-index: 1;
+        }
+        
+        .experience-block { margin-bottom: 2rem; }
+        /* 제목 옆 점 색상 수정: #FB923C -> #004d99 */
+        .experience-title { font-size: 1rem; font-weight: 700; color: #111827; display: flex; align-items: center; gap: 0.5rem; }
+        .experience-title::before { content: ''; width: 7px; height: 7px; background-color: #004d99; border-radius: 50%; flex-shrink: 0; }
+        
+        .experience-company { font-size: 0.95rem; font-weight: 500; color: #374151; }
+        .experience-date { font-size: 0.875rem; color: #6B7280; margin-bottom: 0.25rem; }
+        .experience-location { font-size: 0.875rem; color: #9CA3AF; }
+        .experience-body { font-size: 0.875rem; color: #4B5563; margin-top: 0.75rem; line-height: 1.6; }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="mtc-logo.png" alt="MTC Logo" class="h-10 w-auto object-contain">
+                <div class="text-xl font-bold tracking-tighter">
+                    <a href="index.html">CUK <span class="text-blue-600">.</span></a>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover-primary transition uppercase">home</a>
+                <a href="people.html" class="active-primary hover-primary transition uppercase">people</a>
+                <a href="lecture.html" class="hover-primary transition uppercase">lecture</a>
+                <a href="research.html" class="hover-primary transition uppercase">research</a>
+                <a href="publications.html" class="hover-primary transition uppercase">publications</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <h2 class="text-5xl font-bold text-white tracking-tight">People</h2>
+    </section>
+
+    <main class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-16 items-start">
+            <div class="w-full md:w-1/4 aspect-[3/4] bg-gray-100 overflow-hidden shadow-sm">
+                <img src="Professor Profile.jpeg" alt="Professor Profile" class="w-full h-full object-cover">
+            </div>
+
+            <div class="w-full md:w-3/4">
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold mb-2">윤정우 <span class="text-xl font-medium text-gray-400 ml-2">Christine Jungwoo Yoon</span></h3>
+                    <p class="text-[#004d99] font-semibold uppercase text-sm tracking-wider mb-1">Professor, Media Technology & Contents</p>
+                    <p class="text-sm text-gray-400">Jungwooyoon@catholic.ac.kr</p>
+                </div>
+
+                <div class="space-y-16">
+                    <section>
+                        <h4 class="text-xs font-bold tracking-widest uppercase section-divider" style="color: #004d99;">Bio</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed text-justify">
+                            Jungwoo Christine Yoon is a Korean-Canadian designer and educator teaching in the post-secondary education since 2011 in Vancouver, NYC, Daegu and Seoul. She is an Associate Professor in the Media Technology Contents Department at Catholic University of Korea. She holds Ph.D. in Communication Design from Hongik University in Seoul, MS, Communication/Packaging Design from Pratt Institute, NYC, and BFA, Industrial Design from ECUAD, Vancouver. Her interest in research lies in visual design of online shopping environment focused on inclusion of elderly people with physical and physiological limitations. Her area of expertise in professional design practice and teaching is in structure-focused beauty and food packaging design. She is the Vice President of the Korean Society of Cartoon and Animations (KOSCAS), a member of the board of directors of the Bucheon International Animation Festival Organizing Committee (BIAF), and a member of the board of directors of the Korea Society of Basic Design & Art (KSBDA).
+                        </p>
+                    </section>
+
+                    <section>
+                        <h4 class="text-xs font-bold tracking-widest uppercase section-divider" style="color: #004d99;">Education</h4>
+                        <ul class="space-y-6 text-sm">
+                            <li class="flex gap-6">
+                                <span class="text-gray-400 font-medium w-32 flex-shrink-0">2015 - 2021</span>
+                                <div>
+                                    <span class="lang-ko">홍익대학교</span>
+                                    <span class="lang-en">Doctor of Philosophy - PhD, Communication Design</span>
+                                    <span class="thesis-title">Ph.D. Thesis: “A Study of Improving Trust in Product Quality and Purchase Intention Online Shopping Environment within Elderly Consumers”</span>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <span class="text-gray-400 font-medium w-32 flex-shrink-0">2007 - 2009</span>
+                                <div>
+                                    <span class="lang-ko">Pratt Institute</span>
+                                    <span class="lang-en">Master of Science - MS, Communication/Packaging Design</span>
+                                    <span class="thesis-title">Master’s Thesis: “Effective Integration of Graphics to the Three-Dimensional Packages”</span>
+                                </div>
+                            </li>
+                            <li class="flex gap-6">
+                                <span class="text-gray-400 font-medium w-32 flex-shrink-0">2002 - 2007</span>
+                                <div>
+                                    <span class="lang-ko">Emily Carr University of Art and Design</span>
+                                    <span class="lang-en">BFA, Industrial Design</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4 class="text-xs font-bold tracking-widest uppercase section-divider" style="color: #004d99;">Experience</h4>
+                        <div class="space-y-12">
+                            
+                            <div class="experience-block">
+                                <h5 class="experience-title">The Catholic University of Korea</h5>
+                                <p class="experience-date">4년 8개월</p>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-8">
+                                        <div class="timeline-dot"></div>
+                                        <p class="font-bold text-sm">Department Chair</p>
+                                        <p class="text-xs text-gray-500">정규직</p>
+                                        <p class="text-xs text-gray-500">2026년 3월 - 현재 · 2개월</p>
+                                        <p class="experience-body">Department chair, Media Technology Contents, CUK</p>
+                                    </div>
+                                    <div class="relative">
+                                        <div class="timeline-dot"></div>
+                                        <p class="font-bold text-sm">Associate Professor</p>
+                                        <p class="text-xs text-gray-500">Permanent Full-time</p>
+                                        <p class="text-xs text-gray-500">2021년 9월 - 현재 · 4년 8개월</p>
+                                        <p class="text-[10px] text-gray-400">Songsim campus</p>
+                                        <div class="experience-body">
+                                            <p>Department of Media Technology Contents</p>
+                                            <p>Teaching design and design theory courses in relation to media, film and culture.</p>
+                                            <div class="mt-2 text-xs text-gray-500">
+                                                <p class="font-bold">&lt;Undergraduate&gt;</p>
+                                                <p>- Media Contents Design I, II / Design Trends / Development of Media and Culture / Culture Branding Development / Media Contents Capstone Design / Culture Business Capstone Design / Introduction to Digital Contents Creation</p>
+                                                <p class="font-bold mt-2">&lt;Graduate&gt;</p>
+                                                <p>- Creative Culture Contents Project / Creative Culture Contents Studio / Thesis I, II</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Vice President</h5>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-6">
+                                <p class="experience-company">Korean Society of Cartoon and Animation Studies KOSCAS</p>
+                                <p class="experience-date">2022년 1월 - 현재 · 4년 4개월</p>
+                                <p class="experience-location">대한민국 · 하이브리드 근무</p>
+                                <p class="experience-body">Vice president of exhibition KOSCAS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Assistant Professor</h5>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-6">
+                                <p class="experience-company">The Catholic University of Korea</p>
+                                <p class="experience-date">2013년 3월 - 2021년 7월 · 8년 5개월</p>
+                                <p class="experience-location">Songsim Campus</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Full-time Instructor</h5>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-6">
+                                <p class="experience-company">Daegu University</p>
+                                <p class="experience-date">2012년 3월 - 2013년 2월 · 1년</p>
+                                <p class="experience-location">대한민국 대구 · College of Art and Design / Communication Design Department</p>
+                                    <div class="experience-body text-xs text-gray-500">
+                                        <p class="font-bold">&lt;Undergraduate&gt;</p>
+                                        <p>- Typography I, Typography II / Global Design Project</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Emily Carr University of Art and Design</h5>
+                                <p class="experience-date">Contract Part-time · 9개월</p>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-8">
+                                        <div class="timeline-dot"></div>
+                                        <p class="font-bold text-sm">Instructor</p>
+                                        <p class="text-xs text-gray-500">2011년 4월 - 2011년 12월 · 9개월</p>
+                                        <p class="experience-location">밴쿠버 지역</p>
+                                        <p class="experience-body">Introduction to Packaging Design (in the program of Design Essentials)</p>
+                                    </div>
+                                    <div class="relative">
+                                        <div class="timeline-dot"></div>
+                                        <p class="font-bold text-sm">Instructor of Continuing Studies</p>
+                                        <p class="text-xs text-gray-500">2011년 4월 - 2011년 12월 · 9개월</p>
+                                        <p class="experience-location">캐나다 브리티시컬럼비아 밴쿠버</p>
+                                        <p class="experience-body">Adobe Suite for Design and Production</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Senior Designer</h5>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-6">
+                                <p class="experience-company">CHF Industries · Contract Full-time</p>
+                                <p class="experience-date">2009년 12월 - 2010년 12월 · 1년 1개월</p>
+                                <p class="experience-location">뉴욕시티 지역 · 대면근무</p>
+                                <p class="experience-body">In-house senior designer for DKNY HOME, MARC ECKO HOME, KATE SPADE HOME</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Freelance and Contract Design Works</h5>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-6">
+                                <p class="experience-company">Freelacne and Contract Design Works · 프리랜서</p>
+                                <p class="experience-date">2007년 9월 - 2010년 9월 · 3년 1개월</p>
+                                <p class="experience-location">뉴욕시티 지역 · 하이브리드 근무</p>
+                                <div class="experience-body text-xs text-gray-500 space-y-1">
+                                    <p>- L’OCCITANE (NYC, US) - Graphic Designer</p>
+                                    <p>- Stag & Hare Design Studio (NYC, US) - On-Site Graphic Designer</p>
+                                    <p>- Paprika Kitchen Design Studio (NYC, US) - Branding Designer</p>
+                                    <p>- Studio Bevan (NYC, US) - On-Site Merchandising Designer</p>
+                                    <p>- Papa Live Seafood (NYC, US) – Contract Design Director</p>
+                                    <p>- US POLO HOME / Bathmark / Accessory Zone (NYC, US) - Contract Graphic Packaging Designer</p>
+                                    <p>- Violight (NYC, US) – Graphic Designer</p>
+                                </div>
+                                </div>
+                                </div>
+                            </div> <br>
+
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Teaching Assistant for Graduate Communication / Packaging Design</h5>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-6">
+                                <p class="experience-company">Pratt Institute</p>
+                                <p class="experience-date">2009년 1월 - 2009년 12월 · 1년</p>
+                                <p class="experience-location">뉴욕시티 지역</p>
+                                <div class="experience-body text-sm">
+                                    <p>Graduate Communications Packaging Design Department</p>
+                                    <p>Position: Teaching Assistant for Professor. Chava Ben-Amos</p>
+                                    <div class="mt-2 text-xs text-gray-500">
+                                        <p class="font-bold">&lt;Courses&gt;</p>
+                                        <p>- Graphics Packaging Design I, II / Thesis I, II</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div> </div> <br>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Packaging Designer</h5>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-6">
+                                <p class="experience-company">Marc Rosen Associates · 인턴</p>
+                                <p class="experience-date">2008년 3월 - 2009년 11월 · 1년 9개월</p>
+                                <p class="experience-location">뉴욕시티 지역 · 대면근무</p>
+                                <div class="experience-body text-sm">
+                                    <p>Creative product design and packaging design for beauty and fragrance products for COTY and COTY PRESTIGE.</p>
+                                    </div>
+                                </div>
+                            </div> </div> <br>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Pratt Institute</h5>
+                                <p class="experience-date">Contract Part-time · 7개월</p>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-8">
+                                        <div class="timeline-dot"></div>
+                                        <p class="font-bold text-sm">Assistant Advisor</p>
+                                        <p class="text-xs text-gray-500">2007년 11월 - 2008년 2월 · 4개월</p>
+                                        <p class="experience-body">Pratt Institute Graduate Communications Design Office</p>
+                                    </div>
+                                    <div class="relative">
+                                        <div class="timeline-dot"></div>
+                                        <p class="font-bold text-sm">Assistant Manager</p>
+                                        <p class="text-xs text-gray-500">2007년 8월 - 2007년 11월 · 4개월</p>
+                                        <p class="experience-body">Assistant Manager at Pratt Institute's Manhattan Gallery</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section>
+                        <h4 class="text-xs font-bold tracking-widest uppercase section-divider" style="color: #004d99;">Associations</h4>
+                            <div class="experience-block">
+                                <h5 class="experience-title">Seoul International Design Forum</h5>
+                                <p class="experience-date">Editing of the articles · 2021년 9월 - 현재</p>
+                                <p class="experience-body">Editing and translating of forum articles (Korean to English) of 2014-2020</p>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Culture Business Lab of CUK</h5>
+                                <p class="experience-date">Member of Board of Directors · 2015년 3월 - 현재</p>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Bucheon International Film Festival</h5>
+                                <p class="experience-date">Member of Executive Committee · 2014년 3월 - 현재</p>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Korea Society of Basic Design & Art (KSBDA)</h5>
+                                <p class="experience-date">Executive Director · 2014년 3월 - 현재</p>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Korean Society of Cartoon and Animation Studies(KOSCAS)</h5>
+                                <p class="experience-date">Member of Executive Committee · 2014년 3월 - 현재</p>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Digital Contents Convergence Center Committee</h5>
+                                <p class="experience-date">Member of Board of Directors · 2013년 3월 - 현재</p>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Bernard Wonkil Lee International Forum</h5>
+                                <p class="experience-date">Member of Board of Directors and MC · 2015년 3월 - 2020년 12월</p>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Korea Society of Design Trend (KSDT)</h5>
+                                <p class="experience-date">Executive Director · 2013년 12월 - 2019년 12월</p>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Global Convergence Department Development Committee</h5>
+                                <p class="experience-date">Member of Board of Directors · 2013년 10월 - 2013년 12월</p>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Korea Ministry of Culture, Sports and Tourism</h5>
+                                <p class="experience-date">Advisor · 2013년 11월 - 2013년 12월</p>
+                                <p class="experience-body">R&D project for typography development team.</p>
+                            </div>
+
+                    </section>
+
+
+                    <section>
+                        <h4 class="text-xs font-bold tracking-widest uppercase section-divider" style="color: #004d99;">Volunteer</h4>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Advising professor</h5>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-6">
+                                <p class="experience-company">CATholic of CUK</p>
+                                <p class="experience-date">2021년 3월 - 현재 · 5년 2개월</p>
+                                <p class="experience-location">동물 보호</p>
+                                <p class="experience-body">With group of CUK's students, I am supporting stray cats in the campus for shelter, food, spay/neuter and foster care.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-block">
+                                <h5 class="experience-title">Advising professor</h5>
+                                <div class="timeline-container mt-4">
+                                    <div class="timeline-line"></div>
+                                    <div class="relative mb-6">
+                                <p class="experience-company">English magazine of CUK</p>
+                                <p class="experience-date">2018년 9월 - 2020년 9월 · 2년 1개월</p>
+                                <p class="experience-location">교육</p>
+                                <p class="experience-body">I supported students with creating English magazine of CUK campus. Most support was in English editing, graphic design layout and utilization of typography.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-12 px-6 text-center">
+        <div class="max-w-7xl mx-auto text-sm text-gray-400">
+            <p>@cuk</p>
+            <p class="mt-2 uppercase tracking-widest text-[10px]">The Catholic University of Korea, Bucheon, Republic of Korea</p>
+        </div>
+    </footer>
+
+</body>
+</html>

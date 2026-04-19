@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture - CUK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* 배너 섹션 스타일 */
+        .page-banner {
+            height: 300px; 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner2.jpeg');
+            background-size: cover;
+            background-position: 50% 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* 마우스 호버 및 활성화된 페이지 텍스트 색상 커스텀: #FB923C -> #004d99 */
+        .hover-primary:hover { color: #004d99 !important; }
+        .active-primary { color: #004d99 !important; }
+
+        /* 한 줄 국영문 병기 스타일 */
+        .lecture-title { font-size: 1.1rem; font-weight: 700; color: #1f2937; }
+        .lecture-title .en-sub { font-size: 1rem; font-weight: 400; color: #9ca3af; margin-left: 8px; }
+        
+        /* 설명 국영문 병기 스타일 - 양쪽 정렬 추가 */
+        .description-ko { color: #4b5563; line-height: 1.6; margin-bottom: 4px; text-align: justify; }
+        .description-en { font-size: 0.875rem; color: #9ca3af; line-height: 1.5; font-style: italic; text-align: justify; }
+        
+        /* 사진란 그리드 스타일 */
+        .lecture-photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 24px;
+        }
+        .lecture-photo-item {
+            aspect-ratio: 16 / 9;
+            background-color: #f3f4f6;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            font-size: 0.75rem;
+        }
+        .lecture-photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="mtc-logo.png" alt="MTC Logo" class="h-10 w-auto object-contain">
+                <div class="text-xl font-bold tracking-tighter">
+                    <a href="index.html">CUK <span class="text-blue-600">.</span></a>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover-primary transition uppercase">home</a>
+                <a href="people.html" class="hover-primary transition uppercase">people</a>
+                <a href="lecture.html" class="active-primary hover-primary transition uppercase">lecture</a>
+                <a href="research.html" class="hover-primary transition uppercase">research</a>
+                <a href="publications.html" class="hover-primary transition uppercase">publications</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <h2 class="text-5xl font-bold text-white tracking-tight">Lecture</h2>
+    </section>
+
+    <main class="py-24 px-12 max-w-6xl mx-auto">
+        <div class="space-y-32">
+
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <h3 class="lecture-title">I-DESIGN</h3>
+                    <span class="bg-blue-50 text-[#004d99] text-xs font-semibold px-3 py-1 rounded-full">Undergraduate</span>
+                    <span class="text-sm text-gray-400 ml-auto">2010 - 2026 | Spring</span>
+                </div>
+                <div class="mb-6">
+                    <p class="text-sm text-gray-600 leading-relaxed text-justify mb-1">본 강의는 신입생의 기초소양과 전공탐색을 융합한 특화 교과목으로서, 본교 신입생 대상 특화 학년제인 DESIGNer학년제의 1학기 이수 교과이다. 본 수업은 학생들의 주도하에 개인이나 팀으로 나뉘어 진로선택이나 진로나 미래에 대한 자신들만의 설계를 진행하며 앞으로 4년간의 대학생활에 대한 계획을 작성하는것이 주된 목표로, 학기동안 개인 및 팀 으로 나뉘어서 진로 및 직업 관련한 조사 및 탐색을 진행한다. 따라서 수업의 대부분은 학생들의 주도하게 구성되고 발표하고 진행되며 개별/팀별 학습 50%, 외부 행사, 특강, 견학 등 창의적 활동 50%으로 구성된다. 팀별 트랜드 발표, 팀/개인 학과 특성 발표, 학과 졸업 후 연관된 진로에 대한 조사 및 리포트, 졸업 선배 혹은 연관된 직업군에 있는 인물 1인 인터뷰, 박람회 및 연관된 행사 방문1회, 학생주도 전공탐색 공동 프로젝트를 수행하고 프로젝트의 과정과 결과를 AI스마트 통합지원시스템에 탑재하여 장기적인 진로수립을 위한 기반을 마련한다. 이 교과를 통해 신입생의 기초소양을 강화하고 재학 초기 진로발달 단계에 맞는 진로역량 함양을 지원하고자 한다.</p>
+                    <p class="description-en">This course is a specialized subject that integrates basic liberal arts education with major exploration for freshmen, serving as a first-semester requirement under the university's "DESIGNer Year," a dedicated curriculum for first-year students. The primary goal of this class is for students to take the lead, either individually or in teams, in designing their own career paths and future visions while creating a comprehensive plan for their four-year university life. Throughout the semester, students conduct research and exploration related to careers and occupations. Consequently, the majority of the class is student-led in its organization, presentation, and execution, consisting of 50% individual/team learning and 50% creative activities such as external events, special lectures, and field trips. Students perform various tasks, including team presentations on trends, individual/team presentations on departmental characteristics, research reports on career paths related to their major, an interview with a graduate or a professional in a relevant field, and a visit to a job fair or related event. Furthermore, students undertake a student-led collaborative major exploration project and register the process and results into the AI Smart Integrated Support System to establish a foundation for long-term career planning. Through this curriculum, the course aims to strengthen the basic qualifications of freshmen and support the cultivation of career competencies appropriate for the early stages of career development.</p>
+                </div>
+                <div class="lecture-photo-grid">
+                    <div class="lecture-photo-item">Class Photo 1</div>
+                    <div class="lecture-photo-item">Class Photo 2</div>
+                    <div class="lecture-photo-item">Class Photo 3</div>
+                </div>
+            </section>
+
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <h3 class="lecture-title">Career DESIGN</h3>
+                    <span class="bg-blue-50 text-[#004d99] text-xs font-semibold px-3 py-1 rounded-full">Undergraduate</span>
+                    <span class="text-sm text-gray-400 ml-auto">2010 - 2026 | Fall</span>
+                </div>
+                <div class="mb-6">
+                    <p class="text-sm text-gray-600 leading-relaxed text-justify mb-1">본 강의는 신입생의 기초소양과 진로설계를 융합한 특화 교과목으로서, 본교 신입생 대상 특화 학년제인 DESIGNer학년제의 2학기 이수 교과이다. 교과목은 인문/사회/자연/공학/문화/예술 등 여러 분야 다양한 주제의 강의로 개설되며, 이를 통해 학생들은 관심 분야에 대한 개괄적인 이해와 통찰을 얻게 된다. 또한 학생주도 진로 설계 공동 프로젝트를 수행하고 DESIGNer 학년제의 활동 성과를 종합하여 AI스마트통합지원시스템에 탑재함으로써 장기적인 진로수립을 위한 기반을 마련한다. 더불어 전 학과 및 전공이 참여하는 특강 프로그램, 교내 자원을 활용한 학생 주도 진로 탐방, 산업체 참여 특별 프로그램 등의 활동을 이수한다. 이 교과를 통해 상위학년으로의 진입과 전공선택을 위한 진로설계 역량을 지원함으로써 학생들의 실질적 전공선택권을 강화하고자 한다.</p>
+                    <p class="description-en">This course is a specialized subject that integrates basic liberal arts education with career design for freshmen, serving as a second-semester requirement under the university's "DESIGNer Year," a dedicated curriculum for first-year students. The course offers lectures on diverse topics across various fields, including humanities, social sciences, natural sciences, engineering, culture, and the arts, enabling students to gain a broad understanding and insight into their areas of interest. Additionally, students undertake collaborative, student-led career design projects and register their cumulative achievements from the DESIGNer Year into the AI Smart Integrated Support System to establish a foundation for long-term career planning. Furthermore, the curriculum includes participation in special lecture programs involving all departments, student-led career explorations utilizing campus resources, and industry-linked special programs. Ultimately, this course aims to strengthen students' practical rights to choose their majors by supporting their career design capabilities for advancing to higher years and selecting their academic specializations.</p>
+                </div>
+                <div class="lecture-photo-grid">
+                    <div class="lecture-photo-item">Class Photo 1</div>
+                    <div class="lecture-photo-item">Class Photo 2</div>
+                    <div class="lecture-photo-item">Class Photo 3</div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <h3 class="lecture-title">미디어의발전과문화 <span class="en-sub">Development and Culture of the Media</span></h3>
+                    <span class="bg-blue-50 text-[#004d99] text-xs font-semibold px-3 py-1 rounded-full">Undergraduate</span>
+                    <span class="text-sm text-gray-400 ml-auto">2010 - 2026 | Spring</span>
+                </div>
+                <div class="mb-6">
+                    <p class="text-sm text-gray-600 leading-relaxed text-justify mb-1">본 강의는 학생들이 디지털 미디어와 사회를 둘러싼 문화에 대한 심도 있고 깊이 있는 이해를 통해 미래에 대한 비전을 발전시키고 창의적 사고력을 향상시키는 데 중점을 둔다. 강의, 토론, 발표, 프로젝트 등을 통해 학생들은 미디어와 문화의 과거, 현재, 그리고 미래에 대한 지식을 습득할 수 있다.</p>
+                    <p class="description-en">The focus of the course is to let students develop their visions of the future and improve creative thinking skills through a deep and thorough understanding of digital media and the culture built around society. The course will enable students to gain knowledge of the past, present, and future of media and culture through lectures, discussions, presentations, and projects.</p>
+                </div>
+                <div class="lecture-photo-grid">
+                    <div class="lecture-photo-item">Class Photo 1</div>
+                    <div class="lecture-photo-item">Class Photo 2</div>
+                    <div class="lecture-photo-item">Class Photo 3</div>
+                </div>
+            </section>
+
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <h3 class="lecture-title">미디어콘텐츠디자인 I <span class="en-sub">Media Contents Design I</span></h3>
+                    <span class="bg-blue-50 text-[#004d99] text-xs font-semibold px-3 py-1 rounded-full">Undergraduate</span>
+                    <span class="text-sm text-gray-400 ml-auto">2010 - 2026 | Spring</span>
+                </div>
+                <div class="mb-6">
+                    <p class="text-sm text-gray-600 leading-relaxed text-justify mb-1">본 강의는 시각 커뮤니케이션 디자인, 타이포그래피, 패키지 디자인, 색채, 브랜딩 등 다양한 장르의 디자인에 대해 학습하며, 특히 창의적 사고 능력을 향상시키는 데 중점을 둔다. 창의적인 해결책을 제시하고, 비판적 사고력을 개발하며, 다양한 예술 및 디자인 장르를 이해함으로써 시야를 넓히는 것이 본 강좌의 목표이다.</p>
+                    <p class="description-en">This course will provide an overview of diverse aspects in design at a preliminary level, including visual communication design, typography, packaging design, color, and branding, with a primary emphasis on exercising your brain to enhance and strengthen creative thinking skills. The goal of this course is to broaden your perspectives by providing creative solutions, developing critical thinking, and understanding different genres of art and design. </p>
+                </div>
+                <div class="lecture-photo-grid">
+                    <div class="lecture-photo-item">Class Photo 1</div>
+                    <div class="lecture-photo-item">Class Photo 2</div>
+                    <div class="lecture-photo-item">Class Photo 3</div>
+                </div>
+            </section>
+
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <h3 class="lecture-title">미디어콘텐츠디자인 II<span class="en-sub">Media Contents Design II</span></h3>
+                    <span class="bg-blue-50 text-[#004d99] text-xs font-semibold px-3 py-1 rounded-full">Undergraduate</span>
+                    <span class="text-sm text-gray-400 ml-auto">2010 - 2026 | Fall</span>
+                </div>
+                <div class="mb-6">
+                    <p class="text-sm text-gray-600 leading-relaxed text-justify mb-1">본 강의는 디자인과 영상 매체에 대한 입문 강의로 시작하며 타이포그래피, 그래픽 디자인, 패키지 디자인, 제품 디자인 등을 다룬다. 이후 영화, 엔터테인먼트 필름, 다큐멘터리, 드라마 등 다양한 장르의 영상 매체를 매주 조사하고 토론하며 분석함으로써 해당 분야들을 더욱 심도 있게 학습한다. 해당 분야들을 더욱 심도 있게 학습한다. 학생들은 이론 강의와 사례 연구를 통해 디자인의 개념과 영상 속 역할을 고찰하고, 과정 후반부에는 스튜디오 세션을 통해 타이틀 시퀀스를 직접 기획하고 디자인한다. 또한 커뮤니케이션 디자인, 패키지 디자인, 제품 디자인에 관한 실무 세션과 연구, 비평을 병행하며, 이 중 타이포그래피에 가장 큰 비중을 둔다.</p>
+                    <p class="description-en">The course starts with introductory lectures in design and film media, which cover typography, graphic design, packaging design, product design, and more. The class will further study the above areas through weekly research, discussion, and analysis of different genres of film media, including movies, entertainment films, documentary films, and drama. Through academic lectures and case studies, students will examine the role of design and its role in film, and at the end of the course, students will have studio sessions to plan and design title sequence designs. The course will have hands-on studio sessions, lectures, weekly research, discussions, and critiques in communication design, packaging design, and product design, with the most emphasis on typography.</p>
+                </div>
+                <div class="lecture-photo-grid">
+                    <div class="lecture-photo-item">Class Photo 1</div>
+                    <div class="lecture-photo-item">Class Photo 2</div>
+                    <div class="lecture-photo-item">Class Photo 3</div>
+                </div>
+            </section>
+
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <h3 class="lecture-title">문화경영의실습 <span class="en-sub">Arts Management</span></h3>
+                    <span class="bg-blue-50 text-[#004d99] text-xs font-semibold px-3 py-1 rounded-full">Undergraduate</span>
+                    <span class="text-sm text-gray-400 ml-auto">2010 - 2026 | Spring</span>
+                </div>
+                <div class="mb-6">
+                    <p class="text-sm text-gray-600 leading-relaxed text-justify mb-1">본 강의는 한국의 문화를 중심으로한 스타트업 기업 창업을 기획하고 해당 기업의 ESG적인 전략, inclusiveness(포용성)에 대해 심층적으로 기획한다. 먼저 한국의 문화와 가치가 있는 분야, 물건, 행사, 식품 등 다양한 조사를 시작한 후 해당 기업의 구성에 대한 실질적인 검토를 한다. Stakeholders 관련하여 inclusive한 접근을 시도하여 해당 기업의 팀을 구성할 때 사회에서 포용되어야 하는 개인 및 단체를 포함시켜 창의적 비즈니스 시도에서 사회 전반에 도움이 되도록 하는 연습을 하는 것이 해당 교과목의 큰 목표 중 하나이다. </p>
+                    <p class="description-en">This course plans to establish a startup company centered on Korean culture and plans the company's ESG strategy and inclusiveness in depth. First, we start by researching various fields, objects, events, and foods that have Korean culture and value, and then we conduct a practical review of the company's composition. One of the major goals of this course is to practice including individuals and groups that should be included in society when forming the company's team by attempting an inclusive approach to stakeholders, so that creative business attempts can help society as a whole.</p>
+                </div>
+                <div class="lecture-photo-grid">
+                    <div class="lecture-photo-item">Class Photo 1</div>
+                    <div class="lecture-photo-item">Class Photo 2</div>
+                    <div class="lecture-photo-item">Class Photo 3</div>
+                </div>
+            </section>
+
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <h3 class="lecture-title">문화브랜딩개발실습종합설계 <span class="en-sub">Culture branding development studio</span></h3>
+                    <span class="bg-blue-50 text-[#004d99] text-xs font-semibold px-3 py-1 rounded-full">Undergraduate</span>
+                    <span class="text-sm text-gray-400 ml-auto">2010 - 2026 | Fall</span>
+                </div>
+                <div class="mb-6">
+                    <p class="text-sm text-gray-600 leading-relaxed text-justify mb-1">본 강의는 실존하는 기업, 가게, 매장, 개인 등의 클라이언트를 설정한 후 실질적인 클라이언트의 니즈에 대한 심차적인 논의를 통해 시각적인 솔루션을 제공하는 프로젝트를 진행한다. 예를 들면 부천시의 전통시장 내 매장이나, 수강 학생의 지인의 식당, 부모님의 사업체, 평소 친분이 있던 매장 등 위치, 크기, 장르 불문하여 선택 가능하다. 단 클라이언트의 니즈를 명확히 판단하여 창의적이며 적절한 시각적 솔루션을 제공하는것이 핵심적 포인트라고 할 수 있다. 본 수업에서 진행되는 시각디자인, 패키지디자인, 산업디자인 등 의 기본 지식을 함량하여 이를 바탕으로 사회에서 이를 필요로 하는 실질적 대상들에게 도움이되는 결과물을 제공함으로 학생은 대학 내에서의 교육을 넘어 보다 현실 기반의 과제를 체험해 본다.</p>
+                    <p class="description-en">This course focuses on establishing a client—a real-world business, store, shop, or individual—and then conducting a project to provide a visual solution through in-depth discussion of their needs. For example, a store in a traditional market in Bucheon City, a restaurant owned by an acquaintance, a parent's business, or a familiar store can be chosen regardless of location, size, or genre. However, the key is to clearly assess the client's needs and provide a creative and appropriate visual solution. This course builds on fundamental knowledge in visual design, packaging design, and industrial design, and provides practical solutions that benefit those in need. By providing results that go beyond university education and engage students in realworld projects, the course provides them with hands-on experience.</p>
+                </div>
+                <div class="lecture-photo-grid">
+                    <div class="lecture-photo-item">Class Photo 1</div>
+                    <div class="lecture-photo-item">Class Photo 2</div>
+                    <div class="lecture-photo-item">Class Photo 3</div>
+                </div>
+            </section>
+
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <h3 class="lecture-title">과목명 <span class="en-sub">과목명</span></h3>
+                    <span class="bg-green-50 text-green-500 text-xs font-semibold px-3 py-1 rounded-full">Graduate</span>
+                    <span class="text-sm text-gray-400 ml-auto">2010 - 2026 | Fall</span>
+                </div>
+                <div class="mb-6">
+                    <p class="text-sm text-gray-600 leading-relaxed text-justify mb-1">과목 설명 한문</p>
+                    <p class="description-en">과목 설명 영문</p>
+                </div>
+                <div class="lecture-photo-grid">
+                    <div class="lecture-photo-item">Class Photo 1</div>
+                    <div class="lecture-photo-item">Class Photo 2</div>
+                    <div class="lecture-photo-item">Class Photo 3</div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-12 px-6 text-center">
+        <div class="max-w-7xl mx-auto text-sm text-gray-400">
+            <p>@cuk</p>
+            <p class="mt-2 uppercase tracking-widest text-[10px]">The Catholic University of Korea, Bucheon, Republic of Korea</p>
+        </div>
+    </footer>
+</body>
+</html>
